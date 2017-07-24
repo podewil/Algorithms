@@ -1,0 +1,14 @@
+# Find the index number of the maximum value in the list
+
+def find_max_idx(a):
+    n = len(a)
+    max_v = a[0]          # Initialize the maximum value with the first value "[0]" of the list "a"
+    max_idx = 0           # Initialize the index number for the maximum value 
+    for i in range(1, n):
+        if a[i] > max_v:
+            max_v = a[i]  # Update the maximum value
+            max_idx = i   # Update the index
+    return max_idx
+
+v = [17, 92, 18, 33, 58, 7, 33, 42, 100]
+print(find_max_idx(v))
