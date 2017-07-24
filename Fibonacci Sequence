@@ -1,0 +1,14 @@
+# Fibonacci Sequence
+
+def Fibonacci(n):
+    Fibo = []
+    for i in range(0, n):
+        if i <= 1:
+            Fibo.append(i)
+        else:
+            Fibo.append(Fibo[i-1] + Fibo[i-2])
+
+    print(Fibo)
+
+Fibonacci(10)
+
