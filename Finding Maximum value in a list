@@ -1,0 +1,14 @@
+# Find the maximum value in a list
+
+a = [17, 92, 18, 33, 58, 7, 33, 42, 100]
+
+print(len(a))
+
+def findmax(array):
+    max_val = array[0]                # Initialize the maximum value with the first value in the given list
+    for i in range(len(array)):       
+        if array[i] > max_val:
+            max_val = array[i]
+    return max_val                    # To return proper values you need to double check the indentation!!! 
+
+print(findmax(a))
