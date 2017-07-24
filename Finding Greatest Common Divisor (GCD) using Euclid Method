@@ -1,0 +1,11 @@
+#Euclid GCD (Greatest Common Divisor) Method
+
+def Euclid_GCD(a, b):
+    if b == 0:
+        return a
+    return Euclid_GCD(b, a % b)
+
+print(Euclid_GCD(1, 5))
+print(Euclid_GCD(3, 6))
+print(Euclid_GCD(60, 24))
+print(Euclid_GCD(81, 27))
