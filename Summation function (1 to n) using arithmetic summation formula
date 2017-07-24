@@ -1,0 +1,9 @@
+# Summation 
+
+def sum_n(n):
+    return n * (n + 1) / 2    # Arithmetic summation formula
+
+print(sum_n(10))
+print(sum_n(100))
+print(sum_n(3))
+print(sum_n(4))
