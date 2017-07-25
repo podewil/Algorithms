@@ -1,0 +1,15 @@
+def insertion_sort(vals):
+    n = len(vals)
+    for i in range(1, n):   # run 1 to n-1
+        key = vals[i]        # store "i"th value to the key variable
+        j = i-1              # choose "j"th index just left to the "i"th index
+
+        while j>=0 and vals[j] > key:
+            vals[j+1] = vals[j]
+            j -= 1
+        vals[j+1] = key
+    return vals
+
+vals = [1, 5, 3, 3, 6, 7]
+
+print(insertion_sort(vals))
